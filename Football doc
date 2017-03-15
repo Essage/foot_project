@@ -1,0 +1,41 @@
+Football project
+
+1-> Class Club
+Need to be abstract. This class will have for attributes :
+
+-> name (string 45) as constant : it's the name of your club.
+-> league (string 45) as cosntant : the league in wich your club is playing.
+-> owner (string 45) as constant : Your name.
+
+2-> Class Team
+Need to be an extends of Club. This class will have for attributes :
+-> players : an array of players.
+
+methods :
+-> add player :
+  to add players in your team. It's forbidden to have twice the same player in your team.
+  And to have twice a player with thse same position on the field.
+  players will have 23 players. With 11 players who will play the match and 12 will off.
+-> Strategy:
+
+-> remove player:
+  it will unset a player of the team.
+-> change player:
+  it will switch one of player who is on the field on off and one who is off on the field.
+
+4-> interface IPlayer
+   methods :
+  ->run:
+    takes two parameters (X,Y).
+  -> runAway :
+    takes two parameters (Player,X,Y).
+  -> makeAPass :
+    takes one parameter (a player).
+  -> tackle
+    takes one parameter (a player).
+  ->shoot:
+    takes none parameter.
+
+3->Class Player implements of IPlayer
+
+attributesFoot
